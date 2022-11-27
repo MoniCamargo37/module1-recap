@@ -1,0 +1,314 @@
+body {
+  background-image: url("../img/outward-image.jpg");
+  width: 100%;
+  height: 100%;
+  font-family: "Franklin Gothic Medium";
+  font-size: 16px;
+}
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leftHeader {
+  display: flex;
+  flex-direction: row;
+  width: 45%;
+  height: 6vw;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gameLogo {
+  width: 14vw;
+  height: 10vh;
+  margin-left: 2rem;
+}
+
+.rightHeader {
+  width: 20%;
+  height: 5vh;
+  width: 16vw;
+  margin-right: 4rem;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.heartLogo {
+  width: 3vw;
+  height: 3hw;
+}
+.shoppingCart {
+  width: 3vw;
+  height: 3hw;
+}
+.searchLogo {
+  width: 3vw;
+  height: 3hw;
+}
+
+.navbar-ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 600px;
+  align-items: flex-start;
+}
+
+li {
+  display: flex;
+  text-decoration: none;
+  color: #3f3f3f;
+  list-style: none;
+  font-size: 2rem;
+  font-weight: lighter;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: #ff8c00;
+}
+.gameDescription {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  height: 100%;
+  font-weight: lighter;
+  padding-left: 3%;
+  margin-top: 10%;
+}
+
+.gameDescription h1 {
+  font-size: 6rem;
+  font-weight: lighter;
+  margin-bottom: 0%;
+  margin-top: -2%;
+  font-size: 80px;
+  color: white;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px grey, 0 0 20px grey, 0 0 30px #ff8c00,
+      0 0 40px #ff8c00, 0 0 50px #ff8c00, 0 0 60px #ff8c00, 0 0 70px #ff8c00;
+  }
+
+  to {
+    text-shadow: 0 0 20px grey, 0 0 30px #ff8c00, 0 0 40px #ff8c00,
+      0 0 50px #ff8c00, 0 0 60px #ff8c00, 0 0 70px #ff8c00, 0 0 80px #ff8c00;
+  }
+}
+.gameDescription p {
+  text-align: justify;
+  font-size: 2rem;
+  font-weight: lighter;
+  color: white;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 10rem;
+}
+
+.buyNow {
+  background-color: transparent;
+  width: 40%;
+  height: 100px;
+  margin-right: 20px;
+  border-radius: 40px;
+  font-size: 2rem;
+  color: #ff8c00;
+  border-color: #ff8c00;
+  border-width: 3px;
+}
+
+.play {
+  background-color: transparent;
+  width: 40%;
+  height: 100px;
+  margin-left: 20px;
+  border-radius: 40px;
+  font-size: 2rem;
+  color: #ff8c00;
+  border-color: #ff8c00;
+  border-width: 3px;
+}
+
+.buyNow:hover {
+  color: white;
+  background-color: #ff8c00;
+}
+
+.play:hover {
+  color: white;
+  background-color: #ff8c00;
+}
+
+.icons {
+  width: 100%;
+}
+
+.icons p {
+  font-size: 1.5rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+  margin-top: 2%;
+}
+
+.iconsAvailable {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+.consoleIcon {
+  height: 100px;
+  margin-right: 15%;
+}
+
+@media screen and (min-width: 750px) and (max-width: 1330px) {
+  .header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .leftHeader {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: 6vw;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .gameDescription {
+    width: 92%;
+  }
+  .gameDescription p {
+    font-size: 1.8rem;
+  }
+
+  .buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 10rem;
+  }
+  .iconsAvailable {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .consoleIcon {
+    margin-right: 0px;
+  }
+  .icons p {
+    align-items: center;
+  }
+}
+
+@media screen  and (max-width: 790px) {
+  .header {
+    margin-bottom: 20%;
+  }
+  .gameLogo {
+    width: 10vw;
+    height: 10vh;
+    margin-left: 0.5rem;
+  }
+  .rightHeader{
+    margin-right: 20px;
+  }
+  .leftHeader {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: 6vw;
+    justify-content:flex-start;
+    align-items: center;
+  }
+  .navbar-ul {
+    justify-content: space-between;
+    padding-left: 10px;
+    
+  }
+    li {
+        font-size: 16px;
+       
+      }
+  .gameDescription {
+    width: 92%;
+    margin-bottom: 10%;
+  }
+  .gameDescription h1 {
+    font-size: 60px;
+    margin-bottom: 0%;
+    font-size: 2rem;
+  }
+  .gameDescription p {
+    font-size: 1rem;
+    margin-bottom: 10%;
+    margin-top: 10%;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 7rem;
+  }
+  .buyNow {
+    width: 30%;
+    height: 75px;
+    border-radius: 40px;
+    font-size: 1rem;
+    border-width: 4px;
+  }
+  .play {
+    width: 30%;
+    height: 75px;
+    border-radius: 40px;
+    font-size: 1rem;
+    border-width: 4px;
+  }
+
+  .icons p {
+    font-size: 1.5rem;
+    align-items: center;
+    margin-top: 10%;
+    margin-bottom: 15%;
+  }
+
+  .iconsAvailable {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .consoleIcon {
+    margin-right: 0px;
+    height: 50px;
+  }
+}
+ 
